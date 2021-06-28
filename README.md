@@ -1,24 +1,28 @@
 # 1. Introduction
 
- this project is meant to have an comprensive explanation of the mecanism of Vue.Js
-
-There are some keypoints of Vue.JS
-
-Matering those points guarentee the flying color,
+ Vue is one of the 3 popular MVVM framework of Javascript, this project is meant to achieve an comprensive explanation of the Core of Vue.Js. here some keypoints of Vue.JS are enumerated as below,
 
 - Components Communication
+- the pouplar APIs
 - Reactivity
-- Vuex and Vue Router 
+- Vuex and Vue Router Plugin
 - SSR realization
-- Source Code and the Core Mecanism
+- Source Code 
 
 # 2. A Youtube Project
-this is also a Youtube Project, all the steps and key points has been illustrated in Youtube. It is an honor to discuss the Vue.JS with the Author(you can start with Hi！@James XD)
+
+It also belongs to  `Code with James` Project, so the corresponding videos can be found in my channel in [Youtube Playlist](https://www.youtube.com/channel/UCrBUBSCT4ds02d4id3DBWwA/playlists). As video is a more intuitive way to learn and share knowledge, please feel free to leave any comment in my channel and subscribe to always get the latest contents.
+All the steps and key points has been illustrated in Youtube. It is an honor to discuss the Vue.JS with the Author(you can start with Hi！@James XD)
 
 Each video would like to cover a list of key Points. Most important, the Videos tries to provide a clear methodology to cope with code, hence help to improve the overall programming skills.
 
 ## 2.1 VueX 
 the link of Youtube Video: 
+-[Polyfill VUeRouter_1](https://www.youtube.com/watch?v=G5omujBLJ_Q)
+-[Polyfill VUeRouter_2](https://www.youtube.com/watch?v=k6suGfgBwIE)
+related files:
+- `/src/PStore/vuex.js` : polyfill VueX
+- `/src/APP.vue`: include the component 
 
 the Key Points/Questions regarding VueX:
 - how Vuex is included in Vue? (as plugin, Vue.use(), options,$store)
@@ -31,7 +35,7 @@ the Key Points/Questions regarding VueX:
 - Based on the designed logic of Vuex, How can we optimize the data storage in a Project?
 
 
-Note: Pstore is the folder for customaized/polyfill  Vuex
+
 
 
 ## 2.2 Vue Router 
@@ -47,6 +51,7 @@ the Key Points/Questions regarding Vue Router:
 
 
 ## 2.3 Components Communication
+
 
 ## 2.4 Reactivity
 

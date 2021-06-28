@@ -3,7 +3,7 @@ import Vue from 'vue'
 import Router from './mrouter'
 import HelloWorld from '@/components/HelloWorld'
 import HelloVue from '@/components/HelloVue'
-import HelloHello from '@/components/HelloHello'
+
 
 Vue.use(Router) // router.install(Vue)
 
@@ -20,10 +20,6 @@ export default new Router({
       name: 'Hellovue',
       component: HelloVue
     },
-    {
-      path: '/hellohello',
-      name: 'Hellohello',
-      component: HelloHello
-    }
+    
   ]
 })

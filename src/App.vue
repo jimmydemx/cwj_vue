@@ -1,18 +1,32 @@
 <template>
   <div id="app">
-     <router-link to='/hellovue'>Hello!</router-link>
+     <img src="./assets/logo.png"> 
+
+  <!-- 1.Polyfill Vue Router -->
+     <!-- <router-link to='/hellovue'>Hello!</router-link>
      <router-link to='/'>HelloHello!</router-link> 
-    <img src="./assets/logo.png">
-     
-    <router-view/>
-    <child1 :p2c1="v1" @child1event="add"/>
+     <router-view/> -->
+  <!-- 1.Polyfill Vue Router -->
+
+  <!-- 2.Communications among Components -->
+    <!-- <child1 :p2c1="v1" @child1event="add"/>
     <p>V1={{v1}}</p>
     <child2 ref="hellochild2" msg="some mesg from parent" @click="parentknock"/>
-    
-    <button @click="checkitout">goodorbad</button>
-    <!-- <tester1/> -->
+    <button @click="checkitout">goodorbad</button> -->
+  <!-- 2.Communications among Components -->
 
-   
+    <!-- 3.<tester1/> -->
+
+
+    <!-- 4.form -->
+    <mform/>
+
+    <!-- 4.form -->
+
+  <!-- 5.computed vs watch-->
+    <!-- <compvswat/> -->
+  <!-- 5.computed vs watch-->
+  
 
   </div>
 </template>
@@ -21,6 +35,8 @@
 import tester1 from "../src/components/tester1"
 import child1 from  "../src/components/Child1"
 import child2 from  "../src/components/Child2"
+import mform from "../src/form/index"
+import compvswat from  "../src/components/CompVsWat"
 
 export default {
   provide(){
@@ -30,7 +46,7 @@ export default {
     }
   },
   name: 'App',
-  components:{tester1,child1,child2},
+  components:{tester1,child1,child2,mform,compvswat},
   data(){
     return{
       v1:123
@@ -46,15 +62,12 @@ export default {
 
       //this.$children.find(item=>item.good).good()
       console.log(this.$children.find(item=>item.good))
- 
       console.log("hellochild2",this.$refs.hellochild2.good())
 
     },
     parentknock(){
       console.log("time to sleep, child2")
-
     }
-  
   }
   
  
